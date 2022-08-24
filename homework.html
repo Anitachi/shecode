@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting</title>
+    <style>
+        body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    padding: 20px 4cd 0px;
+    position: relative;
+
+}
+
+.container header{
+     text-align: center;
+     font-size: 50px;
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(26,101,214) ;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 35px 20px;
+    margin-bottom: 0;
+ }
+
+ .days{
+     font-weight: 700;
+ }
+
+ .days span{
+     font-weight: 200;
+     font-family:monospace;
+ }
+
+ .days strong{
+    opacity: 0.6;
+    font-family: monospace;
+ }
+ 
+ button{
+    position: absolute;
+    bottom: 0;
+    left: 34%;
+     border: 1px solid rgb(26,101,214);
+     border-radius: 40px;
+     font-size: 20px;
+     padding: 30px 40px;
+     background-color: rgb(26,101,214);
+     color: #ffffff;
+     cursor: pointer;
+     transform: scale(0.98);
+ }
+     
+ button:hover{
+     background-color: #ffffff;
+     transition: all 200mms ease-in-out;
+     color: rgb(26,101,214);
+ }
+
+ li:hover{
+     background-color:lightgray;
+     transition: all 200ms ease-in-out;
+     padding: 20px, 0;
+     margin: 0 auto;
+ }
+
+ p{
+     font-family: monospace;
+     font-size: 20px;
+     opacity: 0.7;
+
+ }
+</style>
+<body>
+    <div class="container">
+     <header>🌤</header>
+<h1>Currently 21° in Tokyo</h1>
+    <h2>13° / <strong>23°</strong></h2>
+
+    <ul>
+        <li class="days">🌧Tomorrow<br><br><span>10° / </span><strong>22°</strong></li><br><br>
+        <li class="days">🌥 Saturday<br><br><span>15° / </span><strong>17°</strong></li><br><br>
+        <li class="days">☀️ Sunday<br><br><span>25° / </span><strong>28°</strong></li><br><br>
+    </ul>
+    <button>Change city</button>
+    </div>
+    <p>Coded by Anita Chi</p>
+</body>
+</html>
